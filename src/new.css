@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --black: #1B1722;
+    --white : #F0F0F0;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;   
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.header{
+    top: 0;right: 0;left: 0;
+    background-image: url("images/tryyy.png"); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+
+
+.header .logoContent{
+
+    display: flex;
+    align-items: center;
+}
+
+
+.header .logoContent .logo img{
+    height: 9rem;
+}
+
+
+.header .logoContent .logoName {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+.header .logoContent .logoName b{
+    color: red;
+}
+
+.header .navbar a{
+    font-size: 2.4rem;
+    margin-right: 3rem;
+    color: var(--black);
+    font-weight: bold;
+}
+
+
+.header .navbar a:hover{
+    border-bottom: .1rem solid var(--black);
+    padding-bottom: .4rem;
+    color: red;
+}
+.header .icon i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+#menu-bar{
+    display: none;
+}
+
+
+
+
+/* home pagee simulaaa */
+
+
+.introduction{
+
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introduction img{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: -2;
+
+}
+
+.introduction-content{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.introduction .introduction-content b{
+
+    font-family: 'Kaushan Script', cursive;
+    padding: 2rem;
+}
+
+
+.heading{
+    font-size: 210px;
+    font-family: 'Kaushan Script', cursive;
+    color: #fff;
+    margin-top: auto;
+}
+
+.heading span:nth-child(2){
+    color: #f40000;
+
+
+
+
+
+}
+
+
+
+.desc{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn{
+    font-size: 17px;
+    font-family: 'Assistant', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #f40000;
+    padding: 17px 45px;
+    margin-top: 50px;
+    border-radius: 40px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    color: #f40000;
+    background-color: #fff;
+}
+/* homee page endd */
+
+
+/*about pagee simula*/
+
+.about .heading{
+
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem ;
+    margin: 2rem 0;
+    background: grey;
+}
+
+.about .heading span{
+
+    color: red;
+
+}
+
+.about{
+
+    background-image: url("images/pic-reserve.jpg");
+}
+
+
+.about .row{
+
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+
+}
+
+.about .row .video-container{
+
+
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .4rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1) ;
+    height: 100%;
+    object-fit: cover;
+    padding-left: auto;
+    
+    
+
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top:50%; transform: translateY(-50%) ;
+    font-size: 5rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+
+
+
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+
+
+}
+
+.about .row .content h3{
+    font-size: 4rem;
+    color: #fff;
+
+}
+
+.about .row .content p{
+
+    font-size: 2.2rem;
+    color: #fff;
+    padding: .7rem 0;
+    padding-right: 2rem;
+    padding-top: 1rem; 
+    line-height: 1.3;
+
+}
+
+.content .btn{
+    font-size: 17px;
+    font-family: 'Assistant', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #f40000;
+    padding: 17px 45px 20px;
+    margin-top: 60px;
+    border-radius: 40px;
+    transition: all 0.5s;
+}
+.content .btn:hover{
+    color: #f40000;
+    background-color: #fff;
+}
+
+/*about pagee tapos na*/
+
+
+/*about pagee icons simula*/
+
+.icons-container{
+
+    
+
+    background-color: #F0F0F0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+
+
+.icons-container .icons{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 2rem;
+
+
+}
+
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+    border: #424141;
+
+
+}
+
+.icons-container .icons h3{
+    color:#333;
+    padding-bottom: .5rem;
+    font-size: 2.4rem;
+
+
+}
+
+.icons-container .icons span{
+    color:#424141;
+    font-size: 2rem;
+
+
+}
+/*about pagee icons tapos na*/
+
+
+
+/*menu page simula*/
+
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    
+}
+
+.products .box-container .box{
+
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+
+.products .box-container .box{
+    background-image: url("images/pic-reserve.jpg");
+    display: auto;
+
+
+
+}
+
+.products .heading{
+    color: white;
+    font-size: 5cm;
+    width: auto;
+}
+
+
+.products .box-container .box .image{
+
+    position: relative;
+    text-align: center;
+    padding-top: 10rem;
+    overflow: hidden;
+
+}
+
+
+.products .box-container .box .image img{
+
+    height: 30rem;
+
+}
+
+
+.products .box-container .box:hover .image img{
+    transform: scale(1.1)
+
+    
+}
+
+
+.products .box-container .box .image .icons{
+
+    position: absolute;
+    bottom: -7rem; left:0; right:0;
+    display: flex;
+
+}
+
+.products .box-container .box:hover .image .icons{
+    bottom:0;
+
+}
+
+
+.products .box-container .box .image .icons a{
+
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: #999;
+    color: #fff;
+
+}
+
+.products .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid #fff;
+    border-right: .1rem solid #fff;
+    width: 100%;
+}
+
+.products .box-container .box .image .icons a:hover{
+    background:#1B1722 ;
+
+
+}
+
+.products .box-container .box .content{
+
+    padding: 2rem;
+    text-align: center;
+}
+
+.products .box-container .box .content h3{
+
+    font-size: 2.5rem;
+    color: #fff;
+
+}
+
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bolder;
+    padding-top: 1rem;
+
+
+
+}
+
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighten;
+    text-decoration: line-through;
+
+
+}
+
+
+/*endd*/
+
+
+/*reviewww pagee simula*/
+
+
+.review{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    padding-bottom: 10em;
+
+    
+}
+
+
+
+.review .review_box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+    padding: 1rem;
+
+    
+}
+
+.review .review_box .review_card{
+    width: 350px;
+    height: 535px;
+    box-shadow: 0 2px 8px rgba(253, 248, 248, 0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+    background-image: url("images/pic-reserve.jpg");    
+}
+
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 90%;
+    border: 5px solid #cccccc;
+}
+
+.review .review_box .review_card .review_text{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.review .review_box .review_card .review_text .name{
+    color: #f6f1f1;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card .review_text p{
+    color: #f6f1f1;
+
+
+}
+
+
+
+.review .review_box .review_card .review_text .review_icon{
+    color: #fac031;
+    transition: 0.3s;
+}
+
+
+
+.review .review_box .review_card .review_text .review_social i{
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .review_social i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.review .review_box .review_card .review_text p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+    font-size: 1.6em;
+}
+
+.review .review_box .review_card:hover .review_text p{
+    margin-top: 5px;
+
+
+    
+}
+
+
+
+
+/*endd reviewww*/
+
+
+
+
+/*contact simulaaaa*/
+
+
+
+.contact .row{
+
+    display: flex;
+    background: black;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 3rem 2rem;
+    text-align: center;
+
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+
+}
+
+.contact .row form .inputBox{
+
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: black;
+    border: var(--border)
+}
+
+.contact .row form .inputBox span{
+
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none ;
+    background: none;
+
+}
+
+.taas .taass{
+
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem ;
+    margin: 2rem 0;
+    background: grey;
+}
+
+
+/*contact enddd*/
+
+
+
+/*footerr simulaaa*/
+
+
+
+.footer {
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.footer .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+
+.footer .box-container .mainBox .content{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.footer .box-container .mainBox .content h1{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+
+.footer .box-container .mainBox p{
+
+
+    font-size: 1.7rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--black);
+}
+
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .share{
+    padding: 1rem 0;
+    text-align: center;
+
+}
+.footer .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: var(--white);
+    background: var(--black);
+    margin: 0 .3rem;
+    border-radius: 50%;
+
+}
+.footer .share a:hover{
+    background: var(--white);
+    color: var(--black);
+}
+.footer .credit{
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--black);
+    text-align: center;
+    
+}
+
+.footer .logoName b{
+    color:red;
+}
+
+
+
+
+
